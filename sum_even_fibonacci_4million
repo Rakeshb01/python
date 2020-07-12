@@ -1,0 +1,12 @@
+def fibonacci(n):
+  sum = 0
+  a = 1
+  b = 2
+  fib = 0
+  while fib < n :
+    fib = a + b
+    a , b = b , fib
+    if fib % 2 == 0:
+      sum += fib
+  return sum
+fibonacci(4000000)
